@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE MATCH-About us</title>
+    <script src="https://kit.fontawesome.com/8132f59d3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    
+
+    {{>header2}}
+
+
+
+    <div class="banner">
+        <img src="img/header-bg.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <div class="div-con">
+            <h2>
+                "The great marriages are partnerships. It can’t be a <br> marriage without being a partnership.."
+            </h2>
+            <p>
+                "I have a best friend as a husband, and he is my number one supporter. He’s a family man,<br>  and he’s always giving back to God. That is what makes him a beautiful man. We’re not perfect <br> by any means, but that makes us beautiful as well. We’re not afraid to say we’re not<br>  perfect. We have our disagreements, but that comes along with marriage."
+<br> <br> 
+"Marriage is the most natural state of man, and the state in which you will find solid happiness."
+            </p>
+        
+        </div>
+
+        <img src="img/portfolio/Portfolio-2.jpg" alt="plant image">
+
+
+    </div>
+
+   
+ <div class="experts">
+
+    <h2 class="heading">
+        CLIENTS
+    </h2>
+
+    <div class="div-white">
+        <div class="div-team">
+              <img src="img/portfolio/portfolio-1.jpg" alt="" class="team">
+              <h4 class="names"></h4>
+              
+              <p class="lorem"></p>
+              
+        </div>
+
+        <div class="div-team">
+             <img src="img/portfolio/portfolio-5.jpg" alt="" class="team">
+            <h4 class="names"></h4>
+            
+            <p class="lorem"> </p>
+            
+        </div>
+
+        <div class="div-team">
+               <img src="img/portfolio/portfolio-9.jpg" alt="" class="team">
+             <h4 class="names"></h4>
+             
+             <p class="lorem"></p>
+         
+        </div>
+
+
+    </div>
+    
+ </div>
+
+
+
+ 
+
+{{>footer}}
+
+
+
+<script>
+    const jsonData ='{"name":["Shamala","Kavya Singh","Gayatri"],"text":"Lorem ipsum dolor sit amet <br>consectetur, adipisicing elit. Explicabo, <br> inventore natus velit ducimus aliquid,adipisicing elit.  <br>Explicabo, inventore natus velit ducimus aliquid"}';
+
+    let data = JSON.parse(jsonData);
+    let names = document.getElementsByClassName("names");
+    let lorem= document.getElementsByClassName("lorem");
+    let i;
+
+    for(i=0;i<names.length;i++)
+    {
+        names[i].innerHTML=data.name[i];
+        lorem[i].innerHTML = data.text;
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
